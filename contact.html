@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Contact Us | Vinayaga Opulence</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ================================
+           CONTACT PAGE
+           ================================ */
+
+        .contact-page {
+            background: #ffffff;
+            min-height: 100vh;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 35px 30px 80px;
+        }
+
+        /* BREADCRUMB */
+
+        .contact-breadcrumb {
+            font-size: 14px;
+            margin-bottom: 35px;
+            color: #555;
+        }
+
+        .contact-breadcrumb a {
+            color: #4b0055;
+            text-decoration: none;
+        }
+
+        .contact-breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* PAGE TITLE */
+
+        .contact-container h1 {
+            text-align: center;
+            color: #4b0055;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 42px;
+            margin: 0 0 55px;
+        }
+
+        /* TWO COLUMNS */
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        /* LEFT FORM */
+
+        .contact-form {
+            width: 100%;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #777;
+            border-radius: 0;
+            padding: 16px 18px;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            color: #333;
+            outline: none;
+        }
+
+        .contact-form input {
+            height: 55px;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #4b0055;
+        }
+
+        .contact-form button {
+            background: #4b0055;
+            color: #ffffff;
+            border: none;
+            padding: 13px 28px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background: #6a0875;
+        }
+
+        /* RIGHT CONTACT DETAILS */
+
+        .contact-details {
+            padding-top: 0;
+        }
+
+        .contact-details h2 {
+            color: #4b0055;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 30px;
+            margin: 0 0 35px;
+        }
+
+        .contact-detail-item {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .contact-detail-icon {
+            color: #4b0055;
+            font-size: 30px;
+            width: 35px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .contact-detail-item a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .contact-detail-item a:hover {
+            color: #4b0055;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 768px) {
+
+            .contact-container {
+                padding: 30px 20px 60px;
+            }
+
+            .contact-container h1 {
+                font-size: 34px;
+                margin-bottom: 40px;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .contact-details h2 {
+                font-size: 27px;
+            }
+
+        }
+    </style>
+</head>
+
+
+<body class="contact-page">
+
+
+    <!-- HEADER -->
+
+    <header class="main-header">
+
+        <div class="header-top">
+
+            <!-- LOGO -->
+
+            <div class="brand-logo">
+                <img src="images/logo.png" alt="Vinayaga Opulence">
+            </div>
+
+
+            <!-- HEADER ACTIONS -->
+
+            <div class="header-actions">
+
+                <a href="#" class="header-action">
+                    <span class="action-icon">◷</span>
+                    <span>Recently Viewed</span>
+                </a>
+
+                <a href="#" class="header-action">
+                    <span class="action-icon">♙</span>
+                    <span>Sign In</span>
+                </a>
+
+                <a href="#" class="header-action">
+                    <span class="action-icon">♡</span>
+                    <span>Wishlist</span>
+                </a>
+
+                <a href="#" class="header-action">
+                    <span class="action-icon">🛒</span>
+                    <span>Cart</span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- MAIN NAVIGATION -->
+
+        <nav class="main-navigation">
+
+            <a href="index.html">HOME</a>
+            <a href="gold.html">GOLD</a>
+            <a href="silver.html">SILVER</a>
+            <a href="contact.html">CONTACT</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTACT CONTENT -->
+
+    <main>
+
+        <section class="contact-container">
+
+
+            <!-- BREADCRUMB -->
+
+            <div class="contact-breadcrumb">
+
+                <a href="index.html">Home</a>
+                &gt;
+                Contact Us
+
+            </div>
+
+
+            <!-- PAGE TITLE -->
+
+            <h1>Contact Us</h1>
+
+
+            <!-- TWO COLUMNS -->
+
+            <div class="contact-content">
+
+
+                <!-- LEFT: CONTACT FORM -->
+
+                <div class="contact-form">
+
+                    <form>
+
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Name"
+                            required
+                        >
+
+                        <input
+                            type="tel"
+                            name="phone"
+                            placeholder="Phone"
+                            required
+                        >
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                            required
+                        >
+
+                        <textarea
+                            name="message"
+                            placeholder="Message"
+                            required
+                        ></textarea>
+
+
+                        <button type="button" onclick="sendToWhatsApp()">Send message</button>
+
+                    <form onsubmit="sendMessage(event)">
+
+                </div>
+
+
+                <!-- RIGHT: CONTACT DETAILS -->
+
+                <div class="contact-details">
+
+                    <h2>Vinayaga Opulence</h2>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="contact-detail-item">
+
+                        <span class="contact-detail-icon">✉</span>
+
+                        <a href="mailto:vinayagaopulence@gmail.com">
+                            vinayagaopulence@gmail.com
+                        </a>
+
+                    </div>
+
+
+                    <!-- PHONE / WHATSAPP -->
+
+                    <div class="contact-detail-item">
+
+                        <span class="contact-detail-icon">☎</span>
+
+                        <a href="tel:+911234567818">
+                            +91 1234567818
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- LOGO -->
+
+            <div class="footer-column footer-logo">
+
+                <img src="images/logo.png" alt="Vinayaga Opulence">
+
+            </div>
+
+
+            <!-- ADVANTAGES -->
+
+            <div class="footer-column">
+
+                <h3>Advantages</h3>
+
+                <a href="#">BIS Hallmarked Jewellery</a>
+                <a href="#">Free Shipping & Delivery</a>
+
+            </div>
+
+
+            <!-- ABOUT -->
+
+            <div class="footer-column">
+
+                <h3>About</h3>
+
+                <a href="#">About Us</a>
+                <a href="contact.html">Contact Us</a>
+
+            </div>
+
+
+            <!-- CUSTOMER SUPPORT -->
+
+            <div class="footer-column">
+
+                <h3>Customer Support</h3>
+
+                <a href="#">Cancellation and Return</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Store Policies</a>
+
+            </div>
+
+
+            <!-- SOCIAL -->
+
+            <div class="footer-column">
+
+                <h3>Social</h3>
+
+                <div class="footer-social">
+
+                    <a href="#">
+                        <span class="footer-icon">◎</span>
+                        Instagram
+                    </a>
+
+                    <a href="#">
+                        <span class="footer-icon">f</span>
+                        Facebook
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-column">
+
+                <h3>Contact Us</h3>
+
+                <div class="footer-contact">
+
+                    <a href="mailto:vinayagaopulence@gmail.com">
+                        <span class="footer-icon">✉</span>
+                        Mail
+                    </a>
+
+                    <a href="tel:+911234567818">
+                        <span class="footer-icon">☎</span>
+                        Phone
+                    </a>
+
+                    <a href="https://wa.me/911234567818" target="_blank">
+                        <span class="footer-icon">◉</span>
+                        WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-bottom">
+
+            © 2026 Vinayaga Opulence. All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+<script>
+function sendMessage(event) {
+
+    event.preventDefault();
+
+    const name = document.querySelector('input[name="name"]').value;
+    const phone = document.querySelector('input[name="phone"]').value;
+    const email = document.querySelector('input[name="email"]').value;
+    const message = document.querySelector('textarea[name="message"]').value;
+
+    const subject = "Contact Enquiry - Vinayaga Opulence";
+
+    const body =
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Email: " + email + "\n\n" +
+        "Message:\n" + message;
+
+    const gmailURL =
+        "https://mail.google.com/mail/?view=cm&fs=1" +
+        "&to=vinayagaopulence@gmail.com" +
+        "&su=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+
+    window.open(gmailURL, "_blank");
+}
+</script>
+<script>
+function sendToWhatsApp() {
+
+    const name = document.querySelector('input[name="name"]').value;
+    const phone = document.querySelector('input[name="phone"]').value;
+    const email = document.querySelector('input[name="email"]').value;
+    const message = document.querySelector('textarea[name="message"]').value;
+
+    const whatsappMessage =
+        "Hello Vinayaga Opulence,%0A%0A" +
+        "Name: " + name + "%0A" +
+        "Phone: " + phone + "%0A" +
+        "Email: " + email + "%0A" +
+        "Message: " + message;
+
+    const whatsappURL =
+        "https://wa.me/917598423024?text=" + whatsappMessage;
+
+    window.open(whatsappURL, "_blank");
+}
+</script>
+</body>
+
+</html>

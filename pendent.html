@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+
+    <title>Pendent | Vinayaga Opulence</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* PENDENT PAGE */
+
+        .Pendent-page {
+            background: #ffffff;
+            min-height: 100vh;
+        }
+
+        .Pendent-categories {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 70px 30px 100px;
+            text-align: center;
+        }
+
+        .Pendent-categories h1 {
+            color: #4b0055;
+            font-size: 42px;
+            margin-bottom: 60px;
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        .Pendent-category-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 45px;
+            align-items: start;
+        }
+
+        .Pendent-category-card {
+            background: #ffffff;
+            border: 1px solid #dddddd;
+            padding: 12px;
+            transition: 0.3s ease;
+        }
+
+        .Pendent-category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .Pendent-category-card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .Pendent-category-media {
+            width: 100%;
+            height: 360px;
+            overflow: hidden;
+            background: #f4f2f4;
+        }
+
+        .Pendent-category-media video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .Pendent-category-card h2 {
+            color: #4b0055;
+            font-size: 23px;
+            margin: 22px 0 18px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 768px) {
+
+            .Pendent-categories {
+                padding: 45px 20px 70px;
+            }
+
+            .Pendent-categories h1 {
+                font-size: 34px;
+                margin-bottom: 40px;
+            }
+
+            .Pendent-category-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .Pendent-category-media {
+                height: 320px;
+            }
+        }
+    </style>
+</head>
+
+<body class="Pendent-page">
+
+      <!-- HEADER -->
+<header class="main-header">
+
+    <div class="header-top">
+
+        <!-- LOGO -->
+        <div class="brand-logo">
+           <img src="images/logo.png" alt="Vinayaga Opulence">
+        </div>
+
+        <!-- HEADER ACTIONS -->
+        <div class="header-actions">
+
+
+            <a href="#" class="header-action">
+                <span class="action-icon">♙</span>
+                <span>Sign In</span>
+            </a>
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <!-- MAIN NAVIGATION -->
+    <nav class="main-navigation">
+
+        <a href="index.html">HOME</a>
+        <a href="gold.html">GOLD</a>
+        <a href="silver.html">SILVER</a>
+        <a href="contact.html">CONTACT</a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- PENDENT CATEGORIES -->
+<main>
+
+    <section class="Pendent-categories">
+
+        <section class="category-page">
+
+            <!-- BREADCRUMB -->
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> >
+                <a href="gold.html">Gold</a> >
+                Pendent
+            </div>
+
+            <h1>Pendent</h1>
+
+            <div class="Pendent-category-grid">
+
+                <!-- ALL PENDENT -->
+                <div class="Pendent-category-card">
+
+                    <a href="all-pendent.html">
+
+                        <div class="product-image">
+                            <img src="images/all-pendent.jpeg" alt="All Pendent">
+                        </div>
+
+                        <h2>All Pendent</h2>
+
+                    </a>
+
+                </div>
+
+
+                <!-- LETTER PENDENT -->
+                <div class="Pendent-category-card">
+
+                    <a href="letter-pendent.html">
+
+                        <div class="product-image">
+                            <img src="images/letter-pendent.jpeg" alt="Letter Pendent">
+                        </div>
+
+                        <h2>Letter Pendent</h2>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </section>
+
+</main>
+
+
+     <!-- FOOTER -->
+    <footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- LOGO -->
+        <div class="footer-column footer-logo">
+            <img src="images/logo.png" alt="Vinayaga Opulence">
+        </div>
+
+
+        <!-- ADVANTAGES -->
+        <div class="footer-column">
+            <h3>Advantages</h3>
+
+            <a href="#">BIS Hallmarked Jewellery</a>
+            <a href="#">Free Shipping & Delivery</a>
+        </div>
+
+
+        <!-- ABOUT -->
+        <div class="footer-column">
+            <h3>About</h3>
+
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+
+        <!-- CUSTOMER SUPPORT -->
+        <div class="footer-column">
+            <h3>Customer Support</h3>
+
+            <a href="#">Cancellation and Return</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Store Policies</a>
+        </div>
+
+
+        <!-- SOCIAL & CONTACT -->
+        <div class="footer-column">
+            <h3>Social</h3>
+
+            <div class="footer-social">
+
+    <a href="#">
+        <span class="footer-icon">◎</span>
+        Instagram
+    </a>
+
+    <a href="#">
+        <span class="footer-icon">f</span>
+        Facebook
+    </a>
+
+</div>
+</div>
+            <h3 class="contact-title">Contact Us</h3>
+
+            <div class="footer-contact">
+
+    <a href="#">
+        <span class="footer-icon">✉</span>
+        Mail
+    </a>
+
+    <a href="#">
+        <span class="footer-icon">☎</span>
+        Phone
+    </a>
+
+    <a href="#">
+        <span class="footer-icon">◉</span>
+        WhatsApp
+    </a>
+
+</div>
+        </div>
+
+    </div>
+
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+        © 2026 Vinayaga Opulence. All Rights Reserved.
+    </div>
+
+</footer>
+
+
+</body>
+</html>
+
